@@ -1,7 +1,6 @@
 function convertir(){
 let farenheit=document.getElementById('farenheit').value
 const celsius=(farenheit - 32)*5/9
-console.log(celsius)
 let temperatura=document.getElementById('temperatura')
 temperatura.style.height=`${250/100*celsius}px`
 temperatura.style.top=`${-celsius}px`
