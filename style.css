@@ -32,13 +32,18 @@
 .form-control>input{
     display: block;
     margin: auto;
-    width: 50px;
+    width: 100px;
     height: 50px;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
-}
 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 h1{
     text-align: center;
 }
@@ -55,7 +60,7 @@ h1{
 #convertido{
     border: solid 1px black;
     margin: auto;
-    width: 80px;
+    width: 100px;
     height: 80px;
     font-size: 30px;
     margin-top: 5%;
@@ -72,6 +77,8 @@ h1{
   height: 250px;
   margin: 10px auto;
   transform: rotate(180deg);
+  /* border-radius: 20px; */
+  /* overflow: hidden; */
 }
 
 #temperatura{
@@ -83,6 +90,9 @@ h1{
   text-align: center;
   color: white;
   font-weight: 700;
+  /* border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+
 }
 
 #button{
@@ -94,6 +104,7 @@ h1{
     background-color:blue;
     border-radius: 10px;
     color: white;
+    cursor: pointer;
 }
 
 .derecha span:nth-child(1){
