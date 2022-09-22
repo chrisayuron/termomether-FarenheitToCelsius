@@ -95,9 +95,9 @@ h1{
 
 }
 
-#button{
+.btn{
     width: 100px;
-    margin: auto;
+    margin: 0 auto 5px;
     display: block;
     height: 30px;
     border: none;
