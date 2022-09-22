@@ -1,4 +1,4 @@
-function convertir(){
+function convertirData(){
 // captura de valor registrado por el usuario en valor farenheit
 let farenheit=document.getElementById('farenheit').value
 
@@ -42,7 +42,15 @@ document.getElementById('farenheit').value=""
 }
 }
 
+function resetData(){
+    document.getElementById('temperatura').style.height=`0px`
+    document.getElementById('convertido').textContent=''
+}
+
 
 // Captura de evento click y llamada a funcion convertir
-const button=document.getElementById('button')
-button.addEventListener('click',convertir)
+const convert=document.getElementById('convert')
+convert.addEventListener('click',convertirData)
+
+const reset=document.getElementById('reset')
+reset.addEventListener('click',resetData)
