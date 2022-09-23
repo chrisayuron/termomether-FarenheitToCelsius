@@ -43,14 +43,15 @@ document.getElementById('farenheit').value=""
 }
 
 function resetData(){
-    document.getElementById('temperatura').style.height=`0px`
-    document.getElementById('convertido').textContent=''
+    document.getElementById('temperatura').style.height='0px' 
+    document.getElementById('farenheit').value=""
+    document.getElementById('convertido').innerText=''
 }
 
-
-// Captura de evento click y llamada a funcion convertir
+// Captura de evento click y llamada a funcion coqnvertir
 const convert=document.getElementById('convert')
 convert.addEventListener('click',convertirData)
 
 const reset=document.getElementById('reset')
 reset.addEventListener('click',resetData)
+
